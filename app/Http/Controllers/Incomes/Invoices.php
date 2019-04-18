@@ -365,6 +365,8 @@ class Invoices extends Controller
         $invoice = $this->prepareInvoice($invoice);
 
         $view = view($invoice->template_path, compact('invoice'))->render();
+        // Custom fix to allow docker urls in invoice pdf.
+        $view = str_replace(':8080', '', $view);
         $html = mb_convert_encoding($view, 'HTML-ENTITIES');
 
         $pdf = \App::make('dompdf.wrapper');

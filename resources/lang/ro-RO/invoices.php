@@ -5,9 +5,9 @@ return [
     'invoice_number'        => 'Numărul facturii',
     'invoice_date'          => 'Data facturii',
     'total_price'           => 'Preț total',
-    'due_date'              => 'Scadenta',
+    'due_date'              => 'Scadentă',
     'order_number'          => 'Număr de comandă',
-    'bill_to'               => 'Facturaţi Către',
+    'bill_to'               => 'Facturaţi către',
 
     'quantity'              => 'Cantitate',
     'price'                 => 'Preț',
@@ -19,24 +19,24 @@ return [
     'item_name'             => 'Articol|Articole
 Nume articol|Nume articole',
 
-    'show_discount'         => ':discount% Reducere',
-    'add_discount'          => 'Adauga Reducere',
+    'show_discount'         => ':discount% reducere',
+    'add_discount'          => 'Adaugă reducere',
     'discount_desc'         => 'din subtotal',
 
-    'payment_due'           => 'Plata scadenta',
+    'payment_due'           => 'Data scadentă',
     'paid'                  => 'Plătit',
     'histories'             => 'Istoric',
     'payments'              => 'Plăți',
-    'add_payment'           => 'Adauga plata',
-    'mark_paid'             => 'Marcheaza ca si Platit',
-    'mark_sent'             => 'Marcheaza ca si Trimis',
-    'download_pdf'          => 'Descarca PDF',
-    'send_mail'             => 'Trimite Email',
+    'add_payment'           => 'Adaugă plată',
+    'mark_paid'             => 'Marchează ca și plătit',
+    'mark_sent'             => 'Marchează ca și trimis',
+    'download_pdf'          => 'Descarcă PDF',
+    'send_mail'             => 'Trimite email',
     'all_invoices'          => 'Login to view all invoices',
-    'create_invoice'        => 'Create Invoice',
-    'send_invoice'          => 'Send Invoice',
-    'get_paid'              => 'Get Paid',
-    'accept_payments'       => 'Accept Online Payments',
+    'create_invoice'        => 'Crează factură',
+    'send_invoice'          => 'Trimite factură',
+    'get_paid'              => 'Primește plată',
+    'accept_payments'       => 'Acceptă plată online',
 
     'status' => [
         'draft'             => 'Ciornă',
@@ -55,20 +55,20 @@ Parţială',
         'draft'             => 'This is a <b>DRAFT</b> invoice and will be reflected to charts after it gets sent.',
 
         'status' => [
-            'created'       => 'Created on :date',
+            'created'       => 'Creat în :date',
             'send' => [
-                'draft'     => 'Not sent',
-                'sent'      => 'Sent on :date',
+                'draft'     => 'Netrimis',
+                'sent'      => 'Trimis în :date',
             ],
             'paid' => [
-                'await'     => 'Awaiting payment',
+                'await'     => 'Plată în așteptare',
             ],
         ],
     ],
 
     'notification' => [
-        'message'           => 'Primesti acest e-mail, pentru că urmeaza la plata o factura in suma de :amount emisa catre :customer.',
-        'button'            => 'Plateste acum',
+        'message'           => 'A fost emisă o nouă factură către :customer, în suma de :amount.',
+        'button'            => 'Plătește acum',
     ],
 
 ];

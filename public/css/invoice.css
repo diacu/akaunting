@@ -1,3 +1,7 @@
+* {
+    font-size: 12px;
+}
+
 body {
     margin: 0 10px;
     padding: 0;
@@ -31,7 +35,7 @@ th, td {
 }
 
 .text {
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .text-right {
@@ -96,5 +100,5 @@ th, td {
 }
 
 .notes {
-    font-size: 14px;
+    font-size: 10px;
 }
