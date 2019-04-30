@@ -439,6 +439,7 @@ class Invoices extends Controller
         $currency_style = true;
 
         $view = view($invoice->template_path, compact('invoice', 'currency_style'))->render();
+        $view = str_replace(':8080', '', $view);
         $html = mb_convert_encoding($view, 'HTML-ENTITIES');
 
         $pdf = app('dompdf.wrapper');

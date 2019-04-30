@@ -30,7 +30,7 @@ services:
     environment:
       PMA_USER: root
       PMA_PASSWORD: akaunting_root_password
-      PMA_HOST: db
+      PMA_HOST: mysql
       PMA_PORT: 3306
       PHP_UPLOAD_MAX_FILESIZE: 1G
       PHP_MAX_INPUT_VARS: 1G
