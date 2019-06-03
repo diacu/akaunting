@@ -334,7 +334,7 @@
                     <p class="lead">{{ trans_choice('general.notes', 2) }}</p>
 
                     <p class="text-muted well well-sm no-shadow" style="margin-top: 10px;">
-                        {{ $invoice->notes }}
+                        {!! nl2br($invoice->notes) !!}
                     </p>
                 @endif
                 @stack('notes_input_end')

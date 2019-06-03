@@ -139,14 +139,6 @@
 
 <div class="row">
     <div class="col-58">
-        @stack('notes_input_start')
-        @if ($invoice->notes)
-        <table class="text" style="page-break-inside: avoid;">
-            <tr><th>{{ trans_choice('general.notes', 2) }}</th></tr>
-            <tr><td>{{ $invoice->notes }}</td></tr>
-        </table>
-        @endif
-        @stack('notes_input_end')
     </div>
     <div class="col-42">
         <table class="text" style="page-break-inside: avoid;">
@@ -178,6 +170,17 @@
         </table>
     </div>
 </div>
+
+@stack('notes_input_start')
+    @if ($invoice->notes)
+    <table class="text" style="page-break-inside: avoid;">
+        <tr><th>{{ trans_choice('general.notes', 2) }}</th></tr>
+        <tr><td>
+            {!! nl2br($invoice->notes) !!}
+        </td></tr>
+    </table>
+    @endif
+    @stack('notes_input_end')
 @endsection
 
 @if (isset($currency_style) && $currency_style)
